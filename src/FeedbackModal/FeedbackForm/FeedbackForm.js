@@ -80,10 +80,12 @@ function FeedbackForm({ onSuccess }) {
           required
         ></textarea>
       </label>
-      <button type="button" onClick={onSuccess}>Cancel</button>
-      <button type="submit" disabled={isLoading}>
-            {isLoading ? 'Sending...' : 'Submit Feedback'}
-      </button>
+      <div className="row-container">
+        <button type="button" onClick={onSuccess}>Cancel</button>
+        <button type="submit" disabled={isLoading}>
+                {isLoading ? 'Sending...' : 'Submit Feedback'}
+        </button>
+      </div>
     </form>
     );
 }
