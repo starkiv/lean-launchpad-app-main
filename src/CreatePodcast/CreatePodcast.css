@@ -1,0 +1,179 @@
+  .app-container {
+    background-color: #FFFFFF;
+    font-family: 'Arial', sans-serif; 
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; 
+    color: #333;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  
+  .form-container {
+    margin-top: 30px;
+    border: 2px solid #94CAAD;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .input-group {
+    box-sizing: border-box;
+  margin-bottom: 20px;
+  position: relative; /* Useful if we want to add icons or other positioned elements inside */
+  background-color: #FFFFFF; /* Gives a distinct background */
+  padding: 10px; /* Additional spacing inside the group */
+  border-radius: 5px; /* Rounded edges for a softer appearance */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+  transition: box-shadow 0.3s ease; /* Smoothens the transition for shadow effects */
+  }
+  
+  .input-group:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* A deeper shadow on hover */
+  }
+  
+  .input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600; /* Bold label for clearer distinction */
+  }
+  
+  .input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #94CAAD;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-group input[type="text"], 
+  .input-group textarea, 
+  .input-group select {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #94CAAD;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #FFFFFF; /* White background for input */
+      color: #333; /* Dark text color for better readability */
+      transition: border-color 0.2s ease; /* Transition for a smoother effect */
+  }
+  
+  .input-group input[type="text"]:focus, 
+  .input-group textarea:focus, 
+  .input-group select:focus {
+      border-color: #F3DCA0; /* Change border color on focus to the primary color */
+      box-shadow: 0 0 5px rgba(243, 220, 160, 0.5); /* A light glow for focused state */
+      outline: none; /* Remove the default browser outline */
+  }
+  
+  
+  input:focus, 
+  textarea:focus, 
+  select:focus {
+    outline: none; /* Remove browser default outline */
+    border-color: #94CAAD; /* Highlight with the secondary color */
+    box-shadow: 0 0 5px rgba(148, 202, 173, 0.5); /* A gentle glow on focus for better UX */
+  }
+  
+  button {
+    background-color: #F3DCA0;
+    border: none;
+    padding: 15px 30px;  /* increased padding for a bigger button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;     /* increased font size */
+    display: block;      /* makes the button a block element */
+    margin: 20px auto;   /* auto margins on the sides will center the button */
+  }
+  
+  button:hover {
+    background-color: #94CAAD;
+  }
+  
+  .row-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .half-width {
+    flex: 1;
+  }
+  
+  .quote-section {
+    margin-top: 20px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .quote-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .quote-display {
+    font-style: italic;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1.5s ease-in-out, visibility 1.5s;
+  }
+  
+  .quote-display.fadeOut {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .quote-display.animate {
+    animation: fadeIn 1.5s forwards, fadeOut 1.5s 1.5s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+  }
+  
+  .answer-container {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #94CAAD; /* Kept the border as is. Remove if you don't want a border */
+    border-radius: 8px;
+    background-color: transparent; /* Removes the background */
+    color: #000
+  }
+  
+  .answer-section {
+    text-align: center;
+    background-color: #94CAAD;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .answer-display {
+    font-style: italic;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    color: #000; /* pure black text */
+  }
+  

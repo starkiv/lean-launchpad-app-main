@@ -1,0 +1,22 @@
+.scroll-top-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    padding: 30px 35px;
+    background-color: #94CAAD;
+    border: none;
+    border-radius: 60%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-top-btn:hover {
+    background-color: #F3DCA0;
+  }
+  
+  .scroll-top-btn.visible {
+    display: block;
+  }
+  

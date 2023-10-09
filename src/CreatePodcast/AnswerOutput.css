@@ -1,0 +1,31 @@
+.answer-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 80%;
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f3f3f3;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.answer-list {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+}
+
+.answer-item {
+    margin-bottom: 10px; /* Spaces out each list item */
+    font-size: 18px; /* Makes text slightly larger */
+    line-height: 1.5; /* Improves readability */
+    padding-left: 10px; /* Slight indent for styling */
+    border-left: 4px solid #3498db; /* Left border for styling */
+}
+.response-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;  /* A darker shade for emphasis */
+    border-bottom: 2px solid #3498db; /* Underline for style */
+    padding-bottom: 10px;  /* Padding to space out the underline */
+}

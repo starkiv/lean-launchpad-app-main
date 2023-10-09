@@ -1,0 +1,11 @@
+.description-container {
+    background-color: #94CAAD;
+    padding: 70px;
+    border-radius: 0px;
+    padding-left: 360px;
+    padding-bottom: 3px;
+}
+
+.description-container p {
+    color: white; /* Assuming you'd want a contrast color like white for better readability */
+}
